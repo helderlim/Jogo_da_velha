@@ -17,8 +17,10 @@ namespace Jogo_da_velha
         {
             InitializeComponent();
         }
+        //bloqueia os botões ao final da partida 
         private void para()
         {
+            // trava todos os botões 
             btn1.Enabled = false;
             btn2.Enabled = false;
             btn3.Enabled = false;
@@ -28,44 +30,75 @@ namespace Jogo_da_velha
             btn7.Enabled = false;
             btn8.Enabled = false;
             btn9.Enabled = false;
-            mensagem.Text = "jogador venceu";
+            //seleciona qual jogador ganho na vez
+            if (jogador == 1)
+            {
+                mensagem.Text = "Jogador O venceu PARABENS!!!!";
+                retorno.Enabled = true;
+               
+            }
+            else
+            {
+                mensagem.Text = "jogador X venceu PARABENS !!!";
+                retorno.Enabled = true;
+            }
+            //reseta o contator para dar velha 
+            jogadas = 0;
         }
+        //filtra as possibilidades de ganhos na partida 
         private void vencedor()
         {
-           
-            if (  btn2.Text== btn1.Text && btn3.Text == btn1.Text && btn1.Text == "X" || btn1.Text == "O")
+            
+
+            if (btn2.Text == btn1.Text && btn3.Text == btn1.Text && btn1.Text != "")
             {
-                para();   
+                
+                para();
+               
             }
-            else if (  btn5.Text==btn4.Text && btn6.Text == btn4.Text && btn4.Text == "X" || btn4.Text == "O")
+            else if (btn5.Text == btn4.Text && btn6.Text == btn4.Text && btn4.Text != "")
             {
-                para();               
+                para();
+              
             }
-            else if ( btn8.Text==btn7.Text && btn7.Text == btn9.Text && btn7.Text == "X" || btn7.Text == "O")
+            else if (btn8.Text == btn7.Text && btn7.Text == btn9.Text && btn7.Text != "")
+            {
+                para();
+                
+            }
+            else if (btn5.Text == btn1.Text && btn1.Text == btn9.Text && btn1.Text != "")
             {
                 para();
             }
-            else if (  btn5.Text==btn1.Text && btn1.Text == btn9.Text && btn1.Text == "X" || btn1.Text == "O")
+            else if (btn5.Text == btn3.Text && btn7.Text == btn3.Text && btn3.Text != "")
             {
                 para();
             }
-            else if ( btn5.Text==btn3.Text && btn7.Text == btn3.Text && btn3.Text == "X" || btn3.Text == "O")
+            else if (btn4.Text == btn1.Text && btn1.Text == btn7.Text && btn1.Text != "")
+            {
+                para();
+            } else if (btn5.Text == btn2.Text && btn2.Text == btn8.Text && btn2.Text != "")
+            {
+                para();
+            } else if (btn6.Text == btn3.Text && btn3.Text == btn9.Text && btn3.Text != "")
             {
                 para();
             }
-            else if ( btn4.Text==btn1.Text && btn1.Text == btn7.Text && btn1.Text == "X" || btn1.Text == "O")
-            {
-                para();
-            }else if(  btn5.Text==btn2.Text && btn2.Text == btn8.Text && btn2.Text == "X" || btn2.Text == "O")
-            {
-                para(); 
-            }else if(  btn6.Text==btn3.Text && btn3.Text == btn9.Text && btn3.Text == "X" || btn3.Text == "O")
-            {
-                para();
-            }
+            //quando der velha 
             else if (jogadas == 9)
             {
-                mensagem.Text = "deu velha !!";        
+                mensagem.Text = "deu velha !!";
+                retorno.Enabled = true;
+                btn1.Enabled = false;
+                btn2.Enabled = false;
+                btn3.Enabled = false;
+                btn4.Enabled = false;
+                btn5.Enabled = false;
+                btn6.Enabled = false;
+                btn7.Enabled = false;
+                btn8.Enabled = false;
+                btn9.Enabled = false;
+                jogadas = 0;
             }
         }
        
@@ -80,13 +113,14 @@ namespace Jogo_da_velha
             {
                 if (jogador == 1)
                 {
+                   
                     btn2.Text = "X";
-                    vez.Text = "btn2";
+                    vez.Text = "vez do joador O";
                 }
                 else
                 {
                     btn2.Text = "O";
-                    vez.Text = "vez do jogador O";
+                    vez.Text = "vez do jogador X";
                 }
                 jogadas++;
                 
@@ -103,12 +137,12 @@ namespace Jogo_da_velha
                 if (jogador == 1)
                 {
                     btn3.Text = "X";
-                    vez.Text = "vez do jogador X";
+                    vez.Text = "vez do jogador O";
                 }
                 else
                 {
                     btn3.Text = "O";
-                    vez.Text = "btn3";
+                    vez.Text = "vez do jogador X";
                 }
                 jogadas++;
                 
@@ -124,12 +158,12 @@ namespace Jogo_da_velha
                 if (jogador == 1)
                 {
                     btn4.Text = "X";
-                    vez.Text = "vez do jogador X";
+                    vez.Text = "vez do jogador O";
                 }
                 else
                 {
                     btn4.Text = "O";
-                    vez.Text = "vez do jogador O";
+                    vez.Text = "vez do jogador X";
                 }
                 jogadas++;
                 
@@ -145,12 +179,12 @@ namespace Jogo_da_velha
                 if (jogador == 1)
                 {
                     btn5.Text = "X";
-                    vez.Text = "vez do jogador X";
+                    vez.Text = "vez do jogador O";
                 }
                 else
                 {
                     btn5.Text = "O";
-                    vez.Text = "vez do jogador O";
+                    vez.Text = "vez do jogador X";
                 }
                 jogadas++;
                 
@@ -167,12 +201,12 @@ namespace Jogo_da_velha
                 if (jogador == 1)
                 {
                     btn6.Text = "X";
-                    vez.Text = "vez do jogador X";
+                    vez.Text = "vez do jogador O";
                 }
                 else
                 {
                     btn6.Text = "O";
-                    vez.Text = "vez do jogador O";
+                    vez.Text = "vez do jogador X";
                 }
                 jogadas++;
       
@@ -188,12 +222,12 @@ namespace Jogo_da_velha
                 if (jogador == 1)
                 {
                     btn7.Text = "X";
-                    vez.Text = "vez do jogador X";
+                    vez.Text = "vez do jogador O";
                 }
                 else
                 {
                     btn7.Text = "O";
-                    vez.Text = "vez do jogador O";
+                    vez.Text = "vez do jogador X";
                 }
                 jogadas++;
               
@@ -209,12 +243,12 @@ namespace Jogo_da_velha
                 if (jogador == 1)
                 {
                     btn8.Text = "X";
-                    vez.Text = "vez do jogador X";
+                    vez.Text = "vez do jogador O";
                 }
                 else
                 {
                     btn8.Text = "O";
-                    vez.Text = "vez do jogador O";
+                    vez.Text = "vez do jogador X";
                 }
                 jogadas++;
             
@@ -230,18 +264,44 @@ namespace Jogo_da_velha
                 if (jogador == 1)
                 {
                     btn9.Text = "X";
-                    vez.Text = "vez do jogador X";
+                    vez.Text = "vez do jogador O";
                 }
                 else
                 {
                     btn9.Text = "O";
-                    vez.Text = "vez do jogador O";
+                    vez.Text = "vez do jogador X";
                 }
                 jogadas++;
       
                 jogador = jogador * -1;
                 vencedor();
             }
+        }
+        //botão de reset onde habilita novamente todos os botões inclusive os texts 
+        private void retorno_Click(object sender, EventArgs e)
+        {
+            retorno.Enabled = false;
+            
+            btn1.Enabled = true;
+            btn2.Enabled = true;
+            btn3.Enabled = true;
+            btn4.Enabled = true;
+            btn5.Enabled = true;
+            btn6.Enabled = true;
+            btn7.Enabled = true;
+            btn8.Enabled = true;
+            btn9.Enabled = true;
+
+            btn1.Text = "";
+            btn2.Text = "";
+            btn3.Text = "";
+            btn4.Text = "";
+            btn5.Text = "";
+            btn6.Text = "";
+            btn7.Text = "";
+            btn8.Text = "";
+            btn9.Text = "";
+            mensagem.Text = "";
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -251,12 +311,12 @@ namespace Jogo_da_velha
                 if (jogador == 1)
                 {
                     btn1.Text = "X";
-                    vez.Text = "vez do jogador X";
+                    vez.Text = "vez do jogador O";
                 }
                 else
                 {
                     btn1.Text = "O";
-                    vez.Text = "vez do jogador O";
+                    vez.Text = "vez do jogador X";
                 }
                 jogadas++;
   

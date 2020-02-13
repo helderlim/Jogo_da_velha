@@ -40,6 +40,7 @@
             this.btn9 = new System.Windows.Forms.Button();
             this.mensagem = new System.Windows.Forms.Label();
             this.vez = new System.Windows.Forms.Label();
+            this.retorno = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn1
@@ -148,11 +149,22 @@
             this.vez.Size = new System.Drawing.Size(0, 13);
             this.vez.TabIndex = 3;
             // 
+            // retorno
+            // 
+            this.retorno.Location = new System.Drawing.Point(156, 400);
+            this.retorno.Name = "retorno";
+            this.retorno.Size = new System.Drawing.Size(75, 23);
+            this.retorno.TabIndex = 4;
+            this.retorno.Text = "reset";
+            this.retorno.UseVisualStyleBackColor = true;
+            this.retorno.Click += new System.EventHandler(this.retorno_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 424);
+            this.Controls.Add(this.retorno);
             this.Controls.Add(this.vez);
             this.Controls.Add(this.mensagem);
             this.Controls.Add(this.label1);
@@ -187,6 +199,7 @@
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Label mensagem;
         private System.Windows.Forms.Label vez;
+        private System.Windows.Forms.Button retorno;
     }
 }
 

@@ -7,3 +7,13 @@ C:\Users\davif\Desktop\Jogo_da_velha\Jogo_da_velha\obj\Debug\Jogo_da_velha.Prope
 C:\Users\davif\Desktop\Jogo_da_velha\Jogo_da_velha\obj\Debug\Jogo_da_velha.csproj.GenerateResource.cache
 C:\Users\davif\Desktop\Jogo_da_velha\Jogo_da_velha\obj\Debug\Jogo_da_velha.exe
 C:\Users\davif\Desktop\Jogo_da_velha\Jogo_da_velha\obj\Debug\Jogo_da_velha.pdb
+C:\Users\aluno1\Desktop\Jogo_da_velha-master\Jogo_da_velha\Jogo_da_velha\bin\Debug\Jogo_da_velha.exe.config
+C:\Users\aluno1\Desktop\Jogo_da_velha-master\Jogo_da_velha\Jogo_da_velha\bin\Debug\Jogo_da_velha.exe
+C:\Users\aluno1\Desktop\Jogo_da_velha-master\Jogo_da_velha\Jogo_da_velha\bin\Debug\Jogo_da_velha.pdb
+C:\Users\aluno1\Desktop\Jogo_da_velha-master\Jogo_da_velha\Jogo_da_velha\obj\Debug\Jogo_da_velha.csprojAssemblyReference.cache
+C:\Users\aluno1\Desktop\Jogo_da_velha-master\Jogo_da_velha\Jogo_da_velha\obj\Debug\Jogo_da_velha.Form1.resources
+C:\Users\aluno1\Desktop\Jogo_da_velha-master\Jogo_da_velha\Jogo_da_velha\obj\Debug\Jogo_da_velha.Properties.Resources.resources
+C:\Users\aluno1\Desktop\Jogo_da_velha-master\Jogo_da_velha\Jogo_da_velha\obj\Debug\Jogo_da_velha.csproj.GenerateResource.cache
+C:\Users\aluno1\Desktop\Jogo_da_velha-master\Jogo_da_velha\Jogo_da_velha\obj\Debug\Jogo_da_velha.csproj.CoreCompileInputs.cache
+C:\Users\aluno1\Desktop\Jogo_da_velha-master\Jogo_da_velha\Jogo_da_velha\obj\Debug\Jogo_da_velha.exe
+C:\Users\aluno1\Desktop\Jogo_da_velha-master\Jogo_da_velha\Jogo_da_velha\obj\Debug\Jogo_da_velha.pdb
